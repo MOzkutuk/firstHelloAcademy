@@ -1,0 +1,38 @@
+body{padding: 0;margin: 0;font-size: 15px; background-color: black;
+    font-family: "Courier New", cursive;}
+
+.admin-page-baslik{
+    color: #84c754;
+    text-align: center;
+}
+.admin-page-alt-baslik{
+    margin-top: -20px;
+}
+.admin-page-bilgilendirme-kutusu{
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    width: 320px;
+    top: 530px;
+    right: 50px;
+    position: absolute;
+    font-size: 80%;
+    line-height: 20px;
+    animation-name: example1;
+    animation-duration: 4s;
+}
+.admin-page-bilgilendirme-kutusu-2 {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    width: 320px;
+    top: 140px;
+    right: 600px;
+    position: absolute;
+    font-size: 80%;
+    line-height: 20px;
+    animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both
+}
+
