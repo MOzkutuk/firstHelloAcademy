@@ -92,9 +92,9 @@
 <div>
   <ul style="display: inline">
     <li><form action="forward-clazz"><button class="button button1">Class</button></form></li>
-    <li><form action="forward-student"><button class="button button1">Students</button></form></li>
-    <li><form action="forward-teacher"><button class="button button1">Teachers</button></form></li>
-    <li><form action="forward-subject"><button class="button button1">Subjects</button></form></li>
+    <li><form action="forward-student"><button class="button button1">Student</button></form></li>
+    <li><form action="forward-teacher"><button class="button button1">Teacher</button></form></li>
+    <li><form action="forward-subject"><button class="button button1">Subject</button></form></li>
     <li><form action="forward-class-report"><button class="button button1">Class Report</button></form></li>
   </ul>
 </div>

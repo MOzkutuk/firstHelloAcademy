@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: mbara
-  Date: 8/7/2021
-  Time: 4:57 AM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -61,7 +54,6 @@
 <div style="text-align: center; margin-left: 40px;">
     <p style="color: darkred;text-decoration: underline; text-shadow: black;font-weight: bold">${error}</p>
 </div>
-
 
 </body>
 </html>

@@ -1,7 +1,6 @@
 package com.firstHelloWorld.firstHelloAcademy.service;
 
 import com.firstHelloWorld.firstHelloAcademy.DAO.StudentDAO;
-import com.firstHelloWorld.firstHelloAcademy.api.Clazz;
 import com.firstHelloWorld.firstHelloAcademy.api.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

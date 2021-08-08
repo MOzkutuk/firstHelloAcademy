@@ -15,13 +15,13 @@ public class Config implements WebMvcConfigurer {
 
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
-        registry.jsp("/WEB-INF/view/",".jsp");
+        registry.jsp("/WEB-INF/view/", ".jsp");
 
     }
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resources/**")
-                .addResourceLocations("/resources/static/css");
+        registry.addResourceHandler("/view/**")
+                .addResourceLocations("/WEB-INF/view/css");
     }
 }

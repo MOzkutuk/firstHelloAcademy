@@ -1,7 +1,5 @@
 package com.firstHelloWorld.firstHelloAcademy.DAO;
 
-
-import com.firstHelloWorld.firstHelloAcademy.api.Clazz;
 import com.firstHelloWorld.firstHelloAcademy.api.Student;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
