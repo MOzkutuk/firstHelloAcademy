@@ -20,11 +20,12 @@ spring.jpa.hibernate.ddl-auto=update to spring.jpa.hibernate.ddl-auto=create
 
 ```
 
-- And make sure you enter your database name in here correctly insted of **_firsthelloacademy_** and if your port number is different change it too.
+- And make sure you enter your database name,username and password in here correctly insted of **_firsthelloacademy_** and if your port number is different change it too.
 
 ```
 spring.datasource.url=jdbc:mysql://localhost:3306/firsthelloacademy
-
+spring.datasource.username=firsthelloacademy
+spring.datasource.password=firsthelloacademy
 ```
 - Use these to login
 
