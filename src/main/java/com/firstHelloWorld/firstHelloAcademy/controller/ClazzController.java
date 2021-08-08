@@ -176,7 +176,11 @@ public class ClazzController {
         //capture the id of the data whom you are trying to delete
         //once captured the id do a service call to delete the data
 
-        clazzService.deleteClazz(id);
+        try{
+            clazzService.deleteClazz(id);
+        }catch (Exception e){
+            return "delete-fail" ;
+        }
 
         return "redirect:/showClazz";
 

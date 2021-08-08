@@ -108,14 +108,10 @@ public class SubjectController {
 
         if(subject == null){
 
-            System.out.println("Null mus demekki");
-
-
-            System.out.println("sonuna kadar geldi");
-
             return "delete-fail";
 
         }else{
+
             subjectService.deleteSubject(id);
 
             return "redirect:/showSubject";

@@ -183,7 +183,15 @@ public class StudentController {
         //capture the id of the student whom you are trying to delete
         //once captured the id do a service call to delete the student
 
-        studentService.deleteStudent(id);
+        try{
+            studentService.deleteStudent(id);
+
+
+        }catch (Exception e){
+            return "delete-fail" ;
+        }
+
+
 
         return "redirect:/showStudent";
 
