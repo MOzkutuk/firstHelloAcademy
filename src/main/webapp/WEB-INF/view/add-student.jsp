@@ -40,11 +40,11 @@
             color: white;
         }
 
-        #ana-baslik{
+        #ana-baslik {
             color: #ffff;
             position: relative;
             border: 2px solid #04AA6D;
-            background-color:#04AA6D;
+            background-color: #04AA6D;
             border-radius: 5px;
             margin-top: 15px;
             margin-right: 200px;

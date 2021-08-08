@@ -1,7 +1,6 @@
 package com.firstHelloWorld.firstHelloAcademy.controller;
 
 import com.firstHelloWorld.firstHelloAcademy.api.Clazz;
-import com.firstHelloWorld.firstHelloAcademy.api.Student;
 import com.firstHelloWorld.firstHelloAcademy.api.Subject;
 import com.firstHelloWorld.firstHelloAcademy.service.SubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -106,16 +105,6 @@ public class SubjectController {
 
         //capture the id of the subject which you are trying to delete
         //once captured the id do a service call to delete the subject
-
-        //clazz.getSubject() null ve bu yuzden error veriyor
-
-
-
-            //System.out.println("null clazz.getSubject()");
-
-
-
-
 
         if(subject == null){
 

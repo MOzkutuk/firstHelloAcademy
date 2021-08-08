@@ -13,7 +13,7 @@
 
 <style>
 
-    .button{
+    .button {
         background-color: #84c754; /* Green */
         border: none;
         border-radius: 5px;
@@ -27,19 +27,26 @@
         transition-duration: 0.4s;
         cursor: pointer;
     }
-    .button1{
+
+    .button1 {
         background-color: black;
-        color:  #84c754;
+        color: #84c754;
     }
-    .button1:hover{
+
+    .button1:hover {
         background-color: #84c754;
         color: white;
     }
 
-    .body{padding: 0;margin: 0;font-size: 15px; background-color: black;
-        font-family: "Courier New", cursive;}
+    .body {
+        padding: 0;
+        margin: 0;
+        font-size: 15px;
+        background-color: black;
+        font-family: "Courier New", cursive;
+    }
 
-    .admin-page-baslik{
+    .admin-page-baslik {
         color: #84c754;
         text-align: center;
     }
@@ -49,17 +56,28 @@
 
 <body class="body">
 
-    <h3  class="admin-page-baslik" font-size: 20px><b> Delete Operation Failed ! You Cannot Delete Mutliple Data At The Same Time</b> </h3>
+<h3 class="admin-page-baslik" font-size: 20px><b> Delete Operation Failed ! You Cannot Delete Mutliple Data At The Same
+    Time</b></h3>
 
-    <div align="center">
+<div align="center">
 
-        <form action="forward-clazz"><button class="button button1">Class</button></form>
-        <form action="forward-student"><button class="button button1">Students</button></form>
-        <form action="forward-teacher"><button class="button button1">Teachers</button></form>
-        <form action="forward-subject"><button class="button button1">Subjects</button></form>
-        <form action="forward-controlPage"><button class="button button1">Go To Menu</button></form>
+    <form action="forward-clazz">
+        <button class="button button1">Class</button>
+    </form>
+    <form action="forward-student">
+        <button class="button button1">Students</button>
+    </form>
+    <form action="forward-teacher">
+        <button class="button button1">Teachers</button>
+    </form>
+    <form action="forward-subject">
+        <button class="button button1">Subjects</button>
+    </form>
+    <form action="forward-controlPage">
+        <button class="button button1">Go To Menu</button>
+    </form>
 
-    </div>
+</div>
 
 
 </body>

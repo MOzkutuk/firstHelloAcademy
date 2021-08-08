@@ -7,33 +7,33 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class ControlPageController {
 
     @GetMapping("/forward-clazz")
-    public String showClazzPage(){
+    public String showClazzPage() {
         return "redirect:/showClazz";
     }
 
     @GetMapping("/forward-student")
-    public String showStudentPage(){
+    public String showStudentPage() {
         return "redirect:/showStudent";
     }
 
     @GetMapping("/forward-teacher")
-    public String showTeacherPage(){
+    public String showTeacherPage() {
         return "redirect:/showTeacher";
     }
 
     @GetMapping("/forward-subject")
-    public String showSubjectPage(){
+    public String showSubjectPage() {
         return "redirect:/showSubject";
     }
 
     @GetMapping("/forward-controlPage")
-    public String showControlPage(){
+    public String showControlPage() {
         return "control-page";
     }
 
 
     @GetMapping("/forward-class-report")
-    public String showClassReport(){
+    public String showClassReport() {
         return "redirect:/showClassReport";
     }
 

@@ -12,22 +12,22 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class LoginController {
 
     @GetMapping("/login")
-    public String getLogin(@ModelAttribute("login") Login login){
+    public String getLogin(@ModelAttribute("login") Login login) {
 
         return "login";
     }
 
     @PostMapping("/login")
-    public String checkLogin(@RequestParam("userName")String userName,
-                             @RequestParam("password")String password,
+    public String checkLogin(@RequestParam("userName") String userName,
+                             @RequestParam("password") String password,
                              ModelMap map) {
-        map.addAttribute("userName",userName);
-        map.addAttribute("password",password);
+        map.addAttribute("userName", userName);
+        map.addAttribute("password", password);
 
-        if(userName.equals("admin") && password.equals("nimda")){
+        if (userName.equals("admin") && password.equals("nimda")) {
             return "control-page";
-        }else{
-            map.addAttribute("error","Invalid login credentials");
+        } else {
+            map.addAttribute("error", "Invalid login credentials");
             return "login";
         }
     }

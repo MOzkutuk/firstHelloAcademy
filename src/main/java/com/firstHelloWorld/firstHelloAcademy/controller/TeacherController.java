@@ -20,13 +20,13 @@ public class TeacherController {
 
 
     @GetMapping("/showTeacher")
-    public String showTeachers(Model model){
+    public String showTeachers(Model model) {
 
         //call dao method to get the data
 
         List<Teacher> teacherList = teacherService.loadTeachers();
 
-        model.addAttribute("teachers",teacherList);
+        model.addAttribute("teachers", teacherList);
 
         return "teacher-list";
 
@@ -37,7 +37,7 @@ public class TeacherController {
 
         Teacher teacher = new Teacher();
 
-        model.addAttribute("teacher",teacher);
+        model.addAttribute("teacher", teacher);
 
         return "add-teacher";
     }
@@ -51,9 +51,9 @@ public class TeacherController {
         //if the user does have a id -> do a update
         //if the user doesn't have an id then do a insert
 
-        if(teacher.getFirst_name().equals("") || teacher.getLast_name().equals("")){
+        if (teacher.getFirst_name().equals("") || teacher.getLast_name().equals("")) {
 
-            model.addAttribute("error","Invalid Teacher credintials");
+            model.addAttribute("error", "Invalid Teacher credintials");
 
             try {
                 Thread.sleep(1000);
@@ -65,23 +65,14 @@ public class TeacherController {
 
             return "add-teacher";
 
-            //studentService getClazz(int id) metodunu dene
-
-        }/*else if(clazz.getId() != student.getClazz().getId()){
-
-            model.addAttribute("clazzError","Class ID does not match");
-
-            return "add-student";
-
-        }*/
-        else{
+        } else {
             System.out.println("ikinci kisma gidiyor");
-            if(teacher.getId() == 0) {
+            if (teacher.getId() == 0) {
 
                 //insert a new record
                 teacherService.saveTeacher(teacher);
 
-            }else {
+            } else {
 
                 //do an update
                 teacherService.update(teacher);

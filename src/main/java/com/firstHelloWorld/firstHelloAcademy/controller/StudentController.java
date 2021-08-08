@@ -27,8 +27,6 @@ public class StudentController {
     @Autowired
     private ClazzService clazzService;
 
-    //@Autowired
-    //private ClazzService clazzService;
 
     @GetMapping("/showStudent")
     public String showStudents(Model model) {
@@ -45,7 +43,7 @@ public class StudentController {
 
 
     @GetMapping("/showClassReport")
-    public String showClassReport(Model model){
+    public String showClassReport(Model model) {
 
 
         List<Student> studentList = studentService.loadStudents();
@@ -53,19 +51,19 @@ public class StudentController {
         List<Teacher> teacherList = new ArrayList<>();
         List<Subject> subjectList = new ArrayList<>();
 
-        for(Student student : studentList){
+        for (Student student : studentList) {
             clazzList.add(student.getClazz());
         }
 
-        for(Clazz clazz : clazzList){
+        for (Clazz clazz : clazzList) {
             teacherList.add(clazz.getTeacher());
             subjectList.add(clazz.getSubject());
         }
 
-        model.addAttribute("studentList",studentList);
-        model.addAttribute("clazzList",clazzList);
-        model.addAttribute("teacherList",teacherList);
-        model.addAttribute("subjectList",subjectList);
+        model.addAttribute("studentList", studentList);
+        model.addAttribute("clazzList", clazzList);
+        model.addAttribute("teacherList", teacherList);
+        model.addAttribute("subjectList", subjectList);
 
         return "/class-report";
 
@@ -79,11 +77,11 @@ public class StudentController {
 
         List<Integer> clazzes = new ArrayList<>();
 
-        for(Clazz clazz : clazzList){
+        for (Clazz clazz : clazzList) {
             clazzes.add(clazz.getId());
         }
 
-        model.addAttribute("clazzes",clazzes);
+        model.addAttribute("clazzes", clazzes);
 
         Student student = new Student();
 
@@ -94,10 +92,6 @@ public class StudentController {
 
     @PostMapping("/save-student")
     public String saveStudent(Student student, Model model, Clazz clazz) {
-
-        //List<Clazz> clazzList = clazzService.loadClazzes();
-
-        //model.addAttribute("clazzes", clazzList);
 
         //write the logic to save the data(studentDTO) to the database
         //do a condition check
@@ -144,7 +138,7 @@ public class StudentController {
 
             return "/add-student";
 
-        }catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
 
             model.addAttribute("numberError", "Please enter the data in numeric format");
 
@@ -160,11 +154,11 @@ public class StudentController {
 
         List<Integer> clazzes = new ArrayList<>();
 
-        for(Clazz clazz : clazzList){
+        for (Clazz clazz : clazzList) {
             clazzes.add(clazz.getId());
         }
 
-        model.addAttribute("clazzes",clazzes);
+        model.addAttribute("clazzes", clazzes);
 
         Student student = new Student();
 

@@ -2,7 +2,7 @@
 <html>
 <head>
     <style>
-        .button{
+        .button {
             background-color: #4CAF50; /* Green */
             border: none;
             color: white;
@@ -15,16 +15,19 @@
             transition-duration: 0.4s;
             cursor: pointer;
         }
-        .button1{
+
+        .button1 {
             background-color: white;
             color: black;
             border: 2px solid #4CAF50;
         }
-        .button1:hover{
+
+        .button1:hover {
             background-color: #4CAF50;
             color: white;
         }
-        .login-baslik{
+
+        .login-baslik {
             border: 2px solid #04AA6D;
             background-color: #04AA6D;
             border-radius: 5px;

@@ -6,21 +6,23 @@
     <meta name="designer" content="Mehmet Baran Ozkutuk. Web Designer." charset="UTF-8"/>
     <title>SMSYS</title>
     <style>
-        #ana-baslik{
+        #ana-baslik {
             color: #ffff;
             position: relative;
             border: 2px solid #04AA6D;
-            background-color:#04AA6D;
+            background-color: #04AA6D;
             border-radius: 5px;
             margin-top: 15px;
             margin-right: 15px;
             margin-left: 15px;
         }
-        #ana-baslik-bilgilendirme-baslik{
+
+        #ana-baslik-bilgilendirme-baslik {
             margin-top: -20px;
             color: #ffff;
         }
-        #admin-panel-baslik{
+
+        #admin-panel-baslik {
             border: 2px solid #04AA6D;
             background-color: #04AA6D;
             border-radius: 5px;
@@ -29,11 +31,12 @@
             margin-right: 1200px;
             left: 30px;
         }
-        #admin-panel-info{
+
+        #admin-panel-info {
             margin-left: 15px;
         }
 
-        li.satir{
+        li.satir {
             color: black;
             border: 2px solid #d4d4d4;
             border-left-width: 15px;
@@ -45,7 +48,8 @@
             list-style-type: none;
             padding: 2px;
         }
-        li.satir2{
+
+        li.satir2 {
             font-family: "Times New Roman", serif;
             color: black;
             border: 2px solid antiquewhite;
@@ -58,7 +62,8 @@
             list-style-type: none;
             padding: 2px;
         }
-        .button{
+
+        .button {
             background-color: #4CAF50; /* Green */
             border: none;
             color: white;
@@ -71,12 +76,14 @@
             transition-duration: 0.4s;
             cursor: pointer;
         }
-        .button1{
+
+        .button1 {
             background-color: white;
             color: black;
             border: 2px solid #4CAF50;
         }
-        .button1:hover{
+
+        .button1:hover {
             background-color: #4CAF50;
             color: white;
         }
@@ -91,7 +98,7 @@
     </div>
 </div>
 <div id="liste">
-    <ul >
+    <ul>
         <li class="satir">Click the login button to login as an admin</li>
         <li class="satir">You will find the username and password in the githup repository</li>
         <li class="satir">This page has been created for the further purposes</li>
@@ -108,12 +115,13 @@
         <h1>Admin Panel</h1>
     </div>
     <div id="admin-panel-info" style="width: 700px;overflow:hidden;">
-        <p>This is a demonstration of what purpose the admin panel works for.Logging in as an admin role will get an option
+        <p>This is a demonstration of what purpose the admin panel works for.Logging in as an admin role will get an
+            option
             to create a&nbsp;Class report which will show all the information about the class, such as the list
             of students, subjects, and teachers
         </p>
         <form action="login">
-            <div >
+            <div>
                 <button class="button button1">Login</button>
             </div>
         </form>
