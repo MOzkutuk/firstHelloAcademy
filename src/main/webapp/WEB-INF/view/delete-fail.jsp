@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: mbara
-  Date: 8/7/2021
-  Time: 9:32 AM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -57,8 +50,9 @@
 <body class="body">
 
 <h3 class="admin-page-baslik" font-size: 20px><b> Delete Operation Failed ! You Cannot Delete Mutliple Data At The Same
-    Time</b></h3>
+    Time ! </b></h3>
 
+<p>The record you are trying to delete is connected to another record. Delete that first </p>
 <div align="center">
 
     <form action="forward-clazz">

@@ -185,13 +185,9 @@ public class StudentController {
 
         try{
             studentService.deleteStudent(id);
-
-
         }catch (Exception e){
-            return "delete-fail" ;
+            return "delete-fail";
         }
-
-
 
         return "redirect:/showStudent";
 
