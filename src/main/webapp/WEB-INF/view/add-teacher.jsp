@@ -65,7 +65,7 @@
 
 <div align="center">
 
-    <h2 id="ana-baslik">Add Subject</h2>
+    <h2 id="ana-baslik">Add Teacher</h2>
 
     <form:form action="save-teacher" modelAttribute="teacher" method="POST">
 

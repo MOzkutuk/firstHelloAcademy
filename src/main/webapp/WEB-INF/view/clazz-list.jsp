@@ -73,7 +73,7 @@
                 <td><b>${clazz.teacher.id}</b></td>
                 <td><a class="btn btn-primary" href="updateClazz?id=${clazz.id}"> Update</a></td>
                 <td><a class="btn btn-danger" href="deleteClazz?id=${clazz.id}"
-                       onclick="if(!(confirm('Are you sure you want to delete this student ?')))return false">
+                       onclick="if(!(confirm('Are you sure you want to delete this class ?')))return false">
                     Delete</a></td>
             </tr>
         </c:forEach>
