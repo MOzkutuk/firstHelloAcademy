@@ -86,6 +86,27 @@ public class ClazzController {
         //if the user does have a id -> do a update
         //if the user doesn't have an id then do a insert
 
+        List<Clazz> clazzList = clazzService.loadClazzes();
+
+        List<Teacher> teachers = teacherService.loadTeachers();
+
+        List<Subject> subjects = subjectService.loadSubjects();
+
+        List<Integer> teacherIdList = new ArrayList<>();
+        List<Integer> subjectIdList = new ArrayList<>();
+
+        for (Teacher teacher : teachers) {
+            teacherIdList.add(teacher.getId());
+        }
+
+        for (Subject subject : subjects) {
+            subjectIdList.add(subject.getId());
+        }
+
+        model.addAttribute("subjects", subjectIdList);
+
+        model.addAttribute("teachers", teacherIdList);
+
         try {
 
 

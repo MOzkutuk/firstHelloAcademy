@@ -51,6 +51,11 @@ public class SubjectController {
         //if the user does have a id -> do a update
         //if the user doesn't have an id then do a insert
 
+        List<Subject> subjectList = subjectService.loadSubjects();
+
+        model.addAttribute("subjects",subjectList);
+
+
         if(subject.getName().equals("")) {
 
             model.addAttribute("error", "Invalid Subject credintials");

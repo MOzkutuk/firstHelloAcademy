@@ -51,6 +51,11 @@ public class TeacherController {
         //if the user does have a id -> do a update
         //if the user doesn't have an id then do a insert
 
+
+        List<Teacher> teacherList = teacherService.loadTeachers();
+
+        model.addAttribute("teachers", teacherList);
+
         if (teacher.getFirst_name().equals("") || teacher.getLast_name().equals("")) {
 
             model.addAttribute("error", "Invalid Teacher credintials");

@@ -98,6 +98,18 @@ public class StudentController {
         //if the user does have a id -> do a update
         //if the user doesn't have an id then do a insert
 
+        List<Clazz> clazzList = clazzService.loadClazzes();
+
+        List<Integer> clazzes = new ArrayList<>();
+
+        for (Clazz theClazz : clazzList) {
+            clazzes.add(theClazz.getId());
+        }
+
+        model.addAttribute("clazzes", clazzes);
+
+
+
         try {
 
             if (student.getFirst_name().equals("") || student.getLast_name().equals("") || student.getClazz().getId() == 0) {
@@ -109,7 +121,6 @@ public class StudentController {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-
 
                 return "add-student";
 
@@ -183,9 +194,9 @@ public class StudentController {
         //capture the id of the student whom you are trying to delete
         //once captured the id do a service call to delete the student
 
-        try{
+        try {
             studentService.deleteStudent(id);
-        }catch (Exception e){
+        } catch (Exception e) {
             return "delete-fail";
         }
 
